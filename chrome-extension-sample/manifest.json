@@ -1,10 +1,14 @@
 {
   "name": "bigSmall.io Chrome Screensharing",
+  "short_name": "bigSmall.io",
   "description": "bigSmall.io Screensharing extension made for Chrome browsers",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "manifest_version": 2,
   "minimum_chrome_version": "34",
   "icons": {
+    "16": "favicon-16x16.png",
+    "48": "android-chrome-48x48.png",
+    "128": "android-chrome-128x128.png"
   },
   "permissions": [
     "desktopCapture"
