@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
     <Description about="urn:mozilla:install-manifest">
-        <em:id>getscreenmedia@andyet.com</em:id>
+        <em:id>firefox-extension@bigsmall.io</em:id>
         <em:type>2</em:type>
-        <em:name>Screensharing Helper for SimpleWebRTC</em:name>
-        <em:description>Helper utility for enabling screensharing</em:description>
+        <em:name>bigSmall.io Screensharing for Firefox</em:name>
+        <em:description>bigSmall.io Screensharing for Firefox</em:description>
         <em:version>1.0</em:version>
         <em:bootstrap>true</em:bootstrap>
-        <em:creator>&amp;yet</em:creator>
+        <em:creator>bigSmall.io</em:creator>
         <em:targetApplication>
             <Description>
-                <em:id>toolkit@mozilla.org</em:id>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                 <em:minVersion>33.0</em:minVersion>
-                <em:maxVersion>36.*</em:maxVersion>
+                <em:maxVersion>44.*</em:maxVersion>
             </Description>
         </em:targetApplication>
     </Description>

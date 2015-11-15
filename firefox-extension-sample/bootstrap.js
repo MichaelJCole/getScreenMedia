@@ -1,8 +1,21 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public 
+/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/.
  */
-var domains = ["simplewebrtc.com"];
+var domains = [
+  // Prod
+  "bigsmall.io",
+  "expert.bigsmall.io",
+  "dashboard.bigsmall.io",
+  // Stage
+  "stage.bigsmall.io",
+  "expert-stage.bigsmall.io",
+  "dashboard-stage.bigsmall.io",
+  // Dev
+  "bigsmall.dev",
+  "expert.bigsmall.dev",
+  "dashboard.bigsmall.dev",
+];
 var addon_domains = []; // list of domains the addon added
 var PREF = "media.getusermedia.screensharing.allowed_domains";
 
