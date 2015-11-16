@@ -4,17 +4,14 @@
  */
 var domains = [
   // Prod
-  "bigsmall.io",
   "expert.bigsmall.io",
   "dashboard.bigsmall.io",
   // Stage
-  "stage.bigsmall.io",
   "expert-stage.bigsmall.io",
   "dashboard-stage.bigsmall.io",
   // Dev
-  "bigsmall.dev",
-  "expert.bigsmall.dev",
-  "dashboard.bigsmall.dev",
+  "expert-dev.bigsmall.io",
+  "dashboard-dev.bigsmall.io",
 ];
 var addon_domains = []; // list of domains the addon added
 var PREF = "media.getusermedia.screensharing.allowed_domains";

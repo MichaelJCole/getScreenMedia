@@ -20,13 +20,11 @@
     "js": [ "content.js" ],
     "matches": [
       "https://*.bigsmall.io/*",
-      "https://*.bigsmall.dev/*"
     ]
   }],
   "externally_connectable": {
     "matches": [
       "https://*.bigsmall.io/*",
-      "https://*.bigsmall.dev/*"
     ]
   }
 }
