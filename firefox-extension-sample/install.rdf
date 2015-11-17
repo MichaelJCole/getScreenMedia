@@ -5,7 +5,7 @@
         <em:type>2</em:type>
         <em:name>bigSmall.io Screensharing for Firefox</em:name>
         <em:description>bigSmall.io Screensharing for Firefox</em:description>
-        <em:version>1.0</em:version>
+        <em:version>1.0.2</em:version>
         <em:bootstrap>true</em:bootstrap>
         <em:creator>bigSmall.io</em:creator>
         <em:targetApplication>
