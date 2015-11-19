@@ -5,7 +5,7 @@
         <em:type>2</em:type>
         <em:name>bigSmall.io Screensharing</em:name>
         <em:description>bigSmall.io Screensharing Extension</em:description>
-        <em:version>1.0.3</em:version>
+        <em:version>1.0.4</em:version>
         <em:bootstrap>true</em:bootstrap>
         <em:creator>bigSmall.io</em:creator>
         <em:targetApplication>
