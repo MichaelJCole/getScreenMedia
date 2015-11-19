@@ -40,6 +40,16 @@ function startup(data, reason) {
     });
 }
 
+function setCookies(domains, state) {
+  var ios = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+  var cookieSvc = Components.classes["@mozilla.org/cookieService;1"].getService(Components.interfaces.nsICookieService);
+
+  domains.forEach(function (domain) {
+    var cookieUri = ios.newURI("http://" + domain + "/", null, null);
+    cookieSvc.setCookieString(cookieUri, null, "firefoxScreenSharing=" + state + ";", null);
+  });
+}
+
 function shutdown(data, reason) {
     if (reason === APP_SHUTDOWN) {
         return;
@@ -53,15 +63,14 @@ function shutdown(data, reason) {
     });
     prefs.setCharPref(PREF, values.join(','));
 
-    var ios = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
-    var cookieSvc = Components.classes["@mozilla.org/cookieService;1"].getService(Components.interfaces.nsICookieService);
-
-    domains.forEach(function (domain) {
-      var cookieUri = ios.newURI("http://" + domain + "/", null, null);
-      cookieSvc.setCookieString(cookieUri, null, "firefoxScreenSharing=notReady;", null);
-    });
+    setCookies(domains, "ready");
 }
 
-function install(data, reason) {}
+function install(data, reason) {
+  setCookies(domains, "ready");
+}
 
-function uninstall(data, reason) {}
+function uninstall(data, reason) {
+  setCookies(domains, "notReady");
+
+}
